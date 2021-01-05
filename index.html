@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script defer src="./js/main.js"></script>
+  <title>Сыграем в пары?</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="header ">
+      <h1 class="headerName">Сыграем в одну игру?</h1>
+      <p class="description"> Твоя задача, отгадать все картинки, и тогда, возможно, ты получишь монеты!</p>
+      <div class="set">
+        <div class="countCards">
+          <div class=countDescription>Выбери количество карточек, чем больше карт, тем сложнее игра и тем больше награды
+            ты получишь. Монеты, кстати расположены справа в нижнем углу</div>
+          <form class="rbtn">
+            <input class='radioButton' id="a" type="radio" name="hopping" value="4" checked>
+            <label for="a"><span></span>
+              <div>4</div>
+            </label>
+            <input class='radioButton' id="b" type="radio" name="hopping" value="8">
+            <label for="b"><span></span>
+              <div>8</div>
+            </label>
+            <input class='radioButton' id="c" type="radio" name="hopping" value="16">
+            <label for="c"><span></span>
+              <div>16</div>
+            </label>
+            <input class='radioButton' id="d" type="radio" name="hopping" value="32">
+            <label for="d"><span></span>
+              <div>32</div>
+            </label>
+            <div class="worm">
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+              <div class="worm__segment"></div>
+            </div>
+          </form>
+        </div>
+        <div class="timer">
+          <p>Добавь таймер, если также хочешь усложнить игру!</p>
+          <div class="check">
+            <input type="checkbox" class="checkbox" id="checkbox" checked />
+            <label for="checkbox"></label>
+          </div>
+        </div>
+        <div class="name-group">
+          <input class="inputName" type="text" id="dynamic-label-input" placeholder="Ваше имя?">
+          <label class="nameLabel" for="dynamic-label-input">Ваше имя?</label>
+        </div>
+        <button class='gameStart' type="submit" onclick='game()'>
+          <span>Играть</span>
+          <span>Играть</span>
+        </button>
+      </div>
+    </div>
+    <div class="header gameOver hide">
+      <h3>Время закончилось, но вы можете попробовать снова!</h3>
+      <div class="buttons">
+        <button type='submit' class=' gameStart menu over'>
+          <span>Вернуться в меню</span>
+          <span>Вернуться в меню</span>
+        </button>
+        <button type='submit' class=' gameStart menu over' onclick='game()'>
+          <span>Сыграть заново</span>
+          <span>Сыграть заново</span>
+        </button>
+      </div>
+    </div>
+    <div class="header congratulation hide">
+      <h1>Уровень пройден!</h1>
+      <h3 class = 'congratulationName'></h3>
+      <div class="buttons">
+        <button type='submit' class=' gameStart menu btnCongratulation'>
+          <span>Вернуться в меню</span>
+          <span>Вернуться в меню</span>
+        </button>
+        <button type='submit' class=' gameStart menu btnCongratulation' onclick='game()'>
+          <span>Сыграть заново</span>
+          <span>Сыграть заново</span>
+        </button>
+      </div>
+    </div>
+    <div class="money">
+      <div class="counts">0</div>
+      <div class="moneta"></div>
+    </div>
+    <div class="repeatGame">
+
+    </div>
+    <main class="gameField">
+
+    </main>
+  </div>
+</body>
+
+</html>
