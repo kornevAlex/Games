@@ -685,6 +685,7 @@ form input:checked+label span,
   border-radius: 10px;
   border: 8px solid rgb(8, 55, 141);
   cursor: pointer;
+  transform: rotate(0);
 }
 
 /* обратная, изначально скрытая сторона */
